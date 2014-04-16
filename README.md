@@ -11,4 +11,10 @@ The original submission doesn't successfully run the in-ROM machine monitor, whi
 
 To find the bugs I ran Klaus Dormann's test suite. The emulator formerly failed and now passes (up to decimal mode.)
 
+Here's a screenshot of the code:
+![PET (shaped) emulator](screenshots/PET-source-code.png "Source code shaped like a PET")
+
+
+See also the post on gplus by mos6502 [here](https://plus.google.com/u/0/108984290462000253857/posts/G11Df2pw6DP).
+
 The rules at the time for submissions to the International Obfuscated C Code Contest put winning entries into the public domain - so I've applied a CC0 license.
