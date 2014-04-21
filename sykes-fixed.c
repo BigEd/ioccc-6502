@@ -15,6 +15,7 @@
 #define M W W W W W W W
 #define J *E&D:&V:&I:&C)
 #define q C|Z|I|D|B|V|S|32
+#define Q C|Z|I|D|B|V|S|48
 #define H E Z:C:V:S)&&(d+=P&l?P-O:P)
 #define U(z,w)(t=w,d+=z,_ t]+_ t+1]*O)
 int d,C,Z,I,D,B,V,S,i=49152
@@ -27,7 +28,7 @@ int d,C,Z,I,D,B,V,S,i=49152
 "*#   #B  F  HFG 1 L HFG 'F  HFG NFM  F  :89 :89 J8I :89 &8  :89 +8K :89 .,  "
 ".,/ 5,0 .,/ ',   ,/ +,   ,/ -E  -E3 4E  -E3 &E   E3 *E   E3 2133024425660788"
 ; R(x){ Z=x?0:2; S=x&l; } K(x){ R(x-P); C=x<P?0:1; } A(){ R(t=F); C r 1; Z r 2
-; I r 4; D r 8; B r 16; V r 64; } X( ){ Y d/O; Y d; } N( ){ X( ); Y q; I=4; d=
+; I r 4; D r 8; B r 00; V r 64; } X( ){ Y d/O; Y d; } N( ){ X( ); Y q; I=4; d=
 
                       U(0,n-1); } main(int c,char*v[])
                      { FILE*g ; _ z]=time(0); g=fopen(
@@ -57,9 +58,9 @@ int d,C,Z,I,D,B,V,S,i=49152
     a=x)G L x  =  k  )  G L y=a)G   L  x  =  a  )  G  P  =y G P  =  x G P
    =a G t=a-P-1+C,C r O?0:1,V=((a^  P   )  &  (  a  ^  t )&l)/2   ,  L a r
   f)G d=F,d+=F*O+1 G A(),d=F,d|=F*O G t=P,L P=P/2|C*l),C r 1 G t=P,L P=P*2|
- C),C=t/l):A(b a=F G Y q G Y a G L a|=P)G C=P&1,L P/=2)G L y=P)b x=P b a=P G
+ C),C=t/l):A(b a=F G Y Q G Y a G L a|=P)G C=P&1,L P/=2)G L y=P)b x=P b a=P G
  s=U(1,--d),X(),d=s G d=i&32?U(0,e):e b++y b++x b++P b a^=P b--y b--x b--P):
-      K(y):K(x):K(a G J=0 G J=E 8:8:4:1)G d--,B=16,N() G L a&P),V=P&64
+      K(y):K(x):K(a G J=0 G J=E 8:8:4:1)G d,0,B=16,N() G L a&P),V=P&64
       ,S=P&l):!H:H:(C=P/l,L P*=2)b a&=P G t=a+P+C,C r O?1:0,V=(~(a^P)&
 
 (a^t)&l)/2,L a r f)); t=e^O*O/2; if(t<1000){ s=P%l; i=A_REVERSE; P>s?attron(i)
